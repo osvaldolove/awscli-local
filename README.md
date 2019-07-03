@@ -2,12 +2,13 @@
 
 This package provides the `awslocal` command, which is a thin wrapper around the `aws`
 command line interface for use with [LocalStack](https://github.com/localstack/localstack).
+This fork adds support for Windows.
 
 ## Installation
 
 You can install the `awslocal` command via `pip`:
 
-```
+```shell
 pip install awscli-local
 ```
 
@@ -20,13 +21,13 @@ please refer to the man pages of `aws help`.
 
 Instead of the following command ...
 
-```
+```shell
 aws --endpoint-url=http://localhost:4568 kinesis list-streams
 ```
 
 ... you can simply use this:
 
-```
+```shell
 awslocal kinesis list-streams
 ```
 
